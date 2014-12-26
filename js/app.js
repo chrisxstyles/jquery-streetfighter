@@ -33,5 +33,14 @@ $(document).ready(function() {
 		//console.log('mouseup');
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
+	});
+
+	$(document).keydown(function(e){
+		if (e.keyCode == 88){
+			//console.log("x pressed")
+			// is there another way than assigning ryu-action to the div class??
+			$('.ryu-action').hide();
+			$('.ryu-cool').show();
+		}
 	})
 })
