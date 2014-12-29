@@ -43,4 +43,10 @@ $(document).ready(function() {
 			$('.ryu-cool').show();
 		}
 	})
+	.keyup(function(e){
+		if (e.keyCode == 88){
+			$('.ryu-action').hide();
+			$('.ryu-ready').show();
+		}
+	})
 })
